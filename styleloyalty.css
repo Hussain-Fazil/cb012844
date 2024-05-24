@@ -1,0 +1,477 @@
+*{
+    font-family: poppins;
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+   
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    margin-right: 50px auto;
+}
+body{
+    max-height: 1500px;
+    max-width: 1300px;
+    background: url(../images/newfile.png);
+}
+
+   
+
+
+
+
+/*==Navigation===============================*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    max-width: 1070px;
+    width: 100%;
+    margin: auto;
+    margin-left: -40px;
+   
+    
+}
+    .fresh a{
+        margin-left: -30px;
+}
+
+.menu{
+    display: flex;
+    
+    
+}
+
+
+.menu li a{
+    padding: 3px 10px;
+    margin: 0px 15px;
+    color: #3b3b3b;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all ease 0.3s;
+}
+.logo{
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #202020;
+}
+.logo span{
+    color: #40aa54;
+}
+
+.right-nav{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+}
+
+.right-nav a{
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+.right-nav .like{
+    background-color: #fff0ee;
+    color: #ff6c57;
+}
+.right-nav .cart{
+    background-color: #ecf7ee;
+    color: #4eb060;
+}
+.right-nav a span{
+    position: absolute;
+    top: -18px;
+    right: -10px;
+    width:20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 50%;
+    color: #ffffff;
+    font-size: 0.6rem;
+    font-weight: 500;
+    background-color: #202020;
+}
+.right-nav .like span{
+    background-color: #ff6c57;
+}
+.right-nav .cart span{
+    background-color: #40b060;
+}
+.menu li a:hover,
+.menu .active{
+    color: #40aa54;
+    transition: all ease 0.3s;
+}
+ul li ul.dropdown li{
+    display: block;
+    margin-left: -5px;
+}
+ul li ul.dropdown{
+    width: 140%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 998;
+    display: none;
+    margin-top: -3px;
+}
+ul li a:hover{
+    background: transparent;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+main{
+    padding: 20px;
+    background-color: rgb(228, 244, 242);
+}
+
+
+.registration-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -70px;
+    justify-content: center;
+}
+
+.registration-form, .benefits {
+    background-color: #aae4d6;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.registration-form h1, .benefits h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6b5050;
+    border-radius: 4px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #218838;
+}
+
+.benefits ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+.image-container {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    width: 90px;
+    height: 90px;
+}
+
+
+/*==footer=====================*/
+footer{
+    background-color: #171a1c;
+    padding: 49px 19px;
+    border-top: 5px solid #40b060;
+    height: 300px;
+    
+}
+.footer-container{
+    max-width: 1100;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer-logo a{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer-logo a span{
+    color: #10fe3c;
+}
+.footer-social{
+    display: flex;
+    margin-top: 9px;
+}
+.footer-social a{
+    width: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff0ee;
+    border: 1px solid #535c54;
+    font-size: 0.8rem;
+    margin: 0px 6px;
+    transition: all ease 0.4s;
+}
+.footer-social a:hover{
+    background-color: #10fe3c;
+    transition: all ease 0.4s;
+}
+.footer-links strong{
+    color: #ecf7ee;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.footer-links ul{
+    margin-top: 9px;
+    color: #ecf7ee;
+}
+.footer-links ul li a{
+    color: #ffffff;
+    opacity: 0.6;
+    margin: 5px opx;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: all ease 0.4s;
+}
+.footer-links li a:hover{
+    opacity: 1.1;
+    transition: all ease 0.4s;
+}
+.footer-subscription{
+    margin-top: 1rem;
+    color: #cdc0c0;
+}
+
+.footer-subscription h2{
+    font-size: 1rem;
+    text-align: center;
+}
+.footer-subscription p{
+    text-align: center;
+}
+.footer-subscription form button {
+    padding: 0.6rem;
+    background-color: #eacece;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+.footer-subscription form button:hover {
+    background-color: #9e9595;
+}
+
+
+@media (max-width: 1200px) {
+    .navigation {
+        flex-direction: column;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        margin: 5px 0;
+    }
+
+    .right-nav {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+
+    .registration-container {
+        padding: 10px;
+    }
+
+    .registration-form, .benefits {
+        max-width: 100%;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .image-container {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        padding: 15px;
+    }
+
+    .menu {
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        margin: 3px 0;
+    }
+
+    .right-nav a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .registration-container {
+        padding: 5px;
+    }
+
+    .registration-form, .benefits {
+        padding: 10px;
+    }
+
+    .image-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo a {
+        font-size: 1.2rem;
+    }
+
+    .footer-social a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-links strong {
+        font-size: 1.2rem;
+    }
+
+    .footer-links ul li a {
+        font-size: 0.7rem;
+    }
+
+    .footer-subscription h2 {
+        font-size: 0.9rem;
+    }
+
+    .footer-subscription form button {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        padding: 10px;
+    }
+
+    .menu {
+        margin: 5px 0;
+    }
+
+    .menu li a {
+        margin: 2px 0;
+    }
+
+    .right-nav a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .registration-container {
+        padding: 0;
+    }
+
+    .registration-form, .benefits {
+        padding: 5px;
+    }
+
+    .image-container img {
+        width: 70px;
+        height: 70px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo a {
+        font-size: 1rem;
+    }
+
+    .footer-social a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-links strong {
+        font-size: 1rem;
+    }
+
+    .footer-links ul li a {
+        font-size: 0.6rem;
+    }
+
+    .footer-subscription h2 {
+        font-size: 0.8rem;
+    }
+
+    .footer-subscription form button {
+        padding: 0.4rem;
+    }
+}

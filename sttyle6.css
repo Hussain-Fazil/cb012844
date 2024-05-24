@@ -1,0 +1,394 @@
+
+
+body{
+    background: url(../images/newfile.png);
+}
+   
+
+
+
+
+/*==Navigation===============================*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    max-width: 1070px;
+    width: 100%;
+    margin: auto;
+    margin-left: -40px;
+   
+    
+}
+    .fresh a{
+        margin-left: -30px;
+}
+
+.menu{
+    display: flex;
+    
+    
+}
+
+
+.menu li a{
+    padding: 3px 10px;
+    margin: 0px 15px;
+    color: #3b3b3b;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all ease 0.3s;
+}
+.logo{
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #202020;
+}
+.logo span{
+    color: #40aa54;
+}
+
+.right-nav{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+}
+
+.right-nav a{
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+.right-nav .like{
+    background-color: #fff0ee;
+    color: #ff6c57;
+}
+.right-nav .cart{
+    background-color: #ecf7ee;
+    color: #4eb060;
+}
+.right-nav a span{
+    position: absolute;
+    top: -18px;
+    right: -10px;
+    width:20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 50%;
+    color: #ffffff;
+    font-size: 0.6rem;
+    font-weight: 500;
+    background-color: #202020;
+}
+.right-nav .like span{
+    background-color: #ff6c57;
+}
+.right-nav .cart span{
+    background-color: #40b060;
+}
+.menu li a:hover,
+.menu .active{
+    color: #40aa54;
+    transition: all ease 0.3s;
+}
+ul li ul.dropdown li{
+    display: block;
+    margin-left: -5px;
+}
+ul li ul.dropdown{
+    width: 140%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 998;
+    display: none;
+    margin-top: -3px;
+}
+ul li a:hover{
+    background: transparent;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+.order-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #cef1bc;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.form-container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/*==footer=====================*/
+footer{
+    background-color: #171a1c;
+    padding: 49px 19px;
+    border-top: 5px solid #40b060;
+    height: 300px;
+    
+}
+.footer-container{
+    max-width: 1100;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-logo a{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer-logo a span{
+    color: #10fe3c;
+}
+.footer-social{
+    display: flex;
+    margin-top: 9px;
+}
+.footer-social a{
+    width: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff0ee;
+    border: 1px solid #535c54;
+    font-size: 0.8rem;
+    margin: 0px 6px;
+    transition: all ease 0.4s;
+}
+.footer-social a:hover{
+    background-color: #10fe3c;
+    transition: all ease 0.4s;
+}
+.footer-links strong{
+    color: #ecf7ee;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.footer-links ul{
+    margin-top: 9px;
+    color: #ecf7ee;
+}
+.footer-links ul li a{
+    color: #ffffff;
+    opacity: 0.6;
+    margin: 5px opx;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: all ease 0.4s;
+}
+.footer-links li a:hover{
+    opacity: 1.1;
+    transition: all ease 0.4s;
+}
+.footer-subscription{
+    margin-top: 1rem;
+    color: #cdc0c0;
+}
+
+.footer-subscription h2{
+    font-size: 1rem;
+    text-align: center;
+}
+.footer-subscription p{
+    text-align: center;
+}
+.footer-subscription form button {
+    padding: 0.6rem;
+    background-color: #eacece;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+.footer-subscription form button:hover {
+    background-color: #9e9595;
+}
+
+
+@media (max-width: 1200px) {
+
+    
+    .navigation {
+        padding: 20px; 
+        max-width: 100%; 
+        margin-left: 0; 
+    }
+
+    .fresh a {
+        margin-left: 0;
+    }
+    .menu li a {
+        margin: 0 10px; 
+    }
+
+    .right-nav {
+        grid-gap: 15px; 
+    }
+
+    .right-nav a {
+        width: 35px; 
+        height: 35px; 
+    }
+
+    .right-nav a span {
+        top: -15px; 
+        right: -8px; 
+        width: 15px; 
+        height: 15px;
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        padding: 15px; 
+    }
+
+    .menu li a {
+        margin: 0 8px; 
+    }
+
+    .right-nav {
+        grid-gap: 10px; 
+    }
+
+    .right-nav a {
+        width: 30px; 
+        height: 30px; 
+    }
+
+    .right-nav a span {
+        top: -12px; 
+        right: -6px; 
+        width: 12px; 
+        height: 12px; 
+        font-size: 0.4rem; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navigation {
+        padding: 10px; 
+    }
+
+    .menu li a {
+        margin: 0 5px; 
+        padding: 3px 5px; 
+    }
+
+    .logo {
+        font-size: 1.2rem; 
+    }
+
+    .right-nav {
+        grid-gap: 8px;
+    }
+
+    .right-nav a {
+        width: 25px; 
+        height: 25px;
+    }
+
+    .right-nav a span {
+        top: -10px; 
+        right: -5px; 
+        width: 10px; 
+        height: 10px; 
+        font-size: 0.3rem;
+    }
+
+    .footer-container {
+        height: auto; 
+    }
+
+    .footer-logo a {
+        font-size: 1.2rem; 
+    }
+
+    .footer-social a {
+        width: 35px; 
+        height: 35px;
+        font-size: 0.7rem; 
+    }
+
+    .footer-links strong {
+        font-size: 1.2rem; 
+    }
+
+    .footer-links ul li a {
+        font-size: 0.7rem; 
+    }
+
+    .footer-subscription h2 {
+        font-size: 0.8rem; 
+    }
+
+    .footer-subscription form button {
+        padding: 0.4rem; 
+        font-size: 0.7rem; 
+    }
+}
