@@ -1,5 +1,5 @@
 body{
-    background-image: url(../images/newfile.png);
+    background-image: url(newfile.png);
   
 }
 *{
@@ -138,7 +138,7 @@ ul li:hover ul.dropdown{
 
 
 .heading{
-    background: url(../im) no-repeat;
+    background: url() no-repeat;
     background-size: 1200px 500px;
     background-position: center;
     text-align: center;
